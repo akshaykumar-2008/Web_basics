@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms</title>
+</head>
+<body>
+    <!-- making forms in html-->
+     <form action="index.json" method="post">
+        <label for="username">User Name:</label>
+        <input type="text" id="username" placeholder="user" minlength="6" maxlength="20" required><br>
+        <label for="pass">Password:</label>
+        <input type="password" minlength="5" required name="pass" id="pass"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com"><br>
+        <label for="num">phone number:</label>
+        <input type="tel" id="num" name="num" minlength="10" maxlength="10" placeholder="123456789">
+        <br><label for="bday">birthdate:</label>
+        <input type="date" name="birthdate" id="bday"><br>
+        <label for="items">No You Want:</label>
+        <input type="number" name="quantitiy" id="quantitiy " min="1" max="10">
+
+        <br><input type="reset"><br>
+        <input type="submit">
+        
+     </form>
+</body>
+</html>
