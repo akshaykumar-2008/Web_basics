@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- making forms in html-->
-     <form action="index.json" method="post">
+     <form action="index.json" method="post" enctype="multipart/form-data">
         <label for="username">User Name:</label>
         <input type="text" id="username" placeholder="user" minlength="6" maxlength="20" required><br>
         <label for="pass">Password:</label>
@@ -16,12 +16,32 @@
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="xyz@gmail.com"><br>
         <label for="num">phone number:</label>
-        <input type="tel" id="num" name="num" minlength="10" maxlength="10" placeholder="123456789">
+        <input type="tel" id="num" name="num" minlength="10" maxlength="10" placeholder="1234567890">
         <br><label for="bday">birthdate:</label>
         <input type="date" name="birthdate" id="bday"><br>
         <label for="items">No You Want:</label>
         <input type="number" name="quantitiy" id="quantitiy " min="1" max="10">
-
+        <br>
+        <label for="title">Title:</label>
+        <label for="Mr">Mr:</label>
+        <input type="radio" id="Mr" name="title">
+        <label for="Ms">Ms:</label>
+        <input type="radio" id="Ms" name="title">
+        <label for="Doc">Doc:</label>
+        <input type="radio" id="Doc" name="title"><br>
+        <label for="pay">Payment</label>
+        <select id="pay">
+            <option value="None">None</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Giftcard">Giftcard</option>
+        </select><br>
+        <label for="sub">Subscribe</label>
+        <input type="checkbox" id="sub"><br>
+        <label for="Comment">Comment</label>
+        <textarea name="comm" id="Comment" rows="3" cols="25">default</textarea><br>
+        <label for="file">file:</label>
+        <input type="file" name="file" id="file" accept="image/png,.pdf">
         <br><input type="reset"><br>
         <input type="submit">
         
